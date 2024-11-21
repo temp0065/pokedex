@@ -1,0 +1,721 @@
+/*
+    -------------
+    GLOBAL STYLES
+    -------------
+*/
+
+:root 
+{
+    /* Colours */
+    --primary-red: #F54D4A;
+    --light-primary-red: #F5BDC0;
+    --dark-primary-red: #902e2d;
+    --secondary-yellow: #F5F254;
+    --dark-secondary-yellow: #7E7D29;
+    --tertiary-blue: #48b3ff;
+    --dark-tertiary-blue: #0D3049;
+    --muted-blue: #5E6C75;
+    --light-white: #F5F5F7;
+    --dark-text: #0D1114;
+    --light-text: #55585A;
+    --success: #6FE16F;
+    --success-text: #254E25;
+}
+
+*:focus 
+{
+    border: 4px solid black;
+}
+
+/* Text */
+
+h1, h2
+{
+    font-family: "Neuton", serif;
+}
+
+p, h3
+{
+    font-family: "Montserrat", serif;
+}
+
+h1
+{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.wrapper
+{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*
+    -------------NAVIGATION-------------
+*/
+nav 
+{
+    background-color: var(--primary-red);
+    display: flex;
+    flex-direction: row;
+}
+
+.poke_logo 
+{
+    width: 174px;
+    height: auto;
+    padding: 10px;
+}
+
+/*
+    -------------FOOTER-------------
+*/
+footer
+{
+    background-color: var(--primary-red);
+    color: var(--light-white);
+    padding: 15px;
+}
+
+
+/*
+    -------------
+    HOMEPAGE
+    -------------
+*/
+
+/*
+    -------------HEADER-------------
+*/
+.header_banner
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/homepage_header_poke.png) no-repeat;
+    background-color: var(--dark-tertiary-blue);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_banner_content
+{
+    margin: 10px;
+    color: var(--light-white);
+}
+
+.header_banner_content h1 
+{
+    margin: 10px 0;
+}
+
+/*
+    -------------POKEMON-------------
+*/
+.homepage_main 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 40px;
+    margin: 40px 0 10px 0;
+}
+
+.pokedex_card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pokedex_card_img
+{
+    border: 5px solid var(--primary-red);
+    border-radius: 19px;
+    padding: 10px;
+    background: var(--light-white);
+    max-width: 100%;
+    height: auto;
+}
+
+.pokedex_card_info p
+{
+    color: var(--light-text);
+}
+
+.more_btn
+{
+    background-color: transparent;
+    border: 1px solid var(--dark-secondary-yellow);
+    color: var(--dark-secondary-yellow);
+    font-size: 1.313rem;
+    border-radius: 14px;
+    padding: 1em 2em;
+    margin: 40px;
+}
+
+.more_btn:hover
+{
+    background-color: var(--secondary-yellow);
+    border: 1px solid var(--secondary-yellow);
+    color: var(--dark-text);
+    transition: 0.5s ease-in-out;
+}
+
+/*
+    -------------
+    POKEMON
+    -------------
+*/
+
+.pokemon_info
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 0;
+}
+
+/*
+    -------------POKEMON-------------
+*/
+/* Poke card */
+
+.poke_card_lg
+{
+    margin: 30px 0;
+}
+
+.poke_card_heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border: 8px solid var(--primary-red);
+    border-radius: 19px;
+    padding: 30px;
+    max-width: 50%;
+    height: auto;
+    background: var(--light-white);
+    margin: 0 auto;
+}
+
+.poke_card_description
+{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 30px 0;
+}
+
+.poke_identity
+{
+    margin-right: 50px;
+}
+
+.caught
+{
+    display: flex;
+    align-items: center;
+}
+
+.caught .material-symbols-outlined
+{
+    color: var(--success-text);
+    font-size: 2rem;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--success);
+    margin-left: 10px;
+}
+
+.poke_card_lg hr
+{
+    border: 1px solid var(--dark-text);
+    width: 70%;
+}
+
+.pokedex_card_img_lg
+{
+    width: 100%;
+    height: auto;
+}
+
+.catch_release_btn
+{
+    background-color: var(--primary-red);
+    color: var(--light-white);
+    padding: 1em 2em;
+    border-radius: 0.8em;
+    border: none;
+    font-size: 1.125rem;
+}
+
+.catch_release_btn:hover
+{
+    background-color: var(--dark-primary-red);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Stats */
+.pokemon_stats
+{
+    background-color: var(--dark-tertiary-blue);
+    color: var(--tertiary-blue);
+    border-radius: 18px;
+    height: 204px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 80px;
+}
+
+.pokemon_stats h3
+{
+    font-size: 1.313rem;
+}
+
+.stat p
+{
+    color: #3094DB;
+    margin: 4px 20px;
+}
+
+/* Types */
+.pokemon_type 
+{
+    margin: 50px 20px;
+}
+
+.pokemon_type h2
+{
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.type
+{
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 7px;
+}
+
+.electric 
+{
+    background-color: var(--secondary-yellow);
+    color: var(--dark-text);
+}
+
+.ground
+{
+    background-color: #6B6B45;
+    color: var(--light-white);
+}
+
+/* Genders */
+.pokemon_gender
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-tertiary-blue);
+    max-width: max-content;
+    height: auto;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 0 0 30px 18px;
+}
+
+.pokemon_gender h2
+{
+    color: var(--light-white);
+    font-family: "Montserrat", serif;
+    margin: 10px;
+}
+
+.poke_gender_icons .material-symbols-outlined
+{
+    font-size: 3rem;
+}
+
+
+.male 
+{
+    color: var(--tertiary-blue);
+}
+
+.female
+{
+    color: var(--light-primary-red);
+}
+
+/* Oak's Analysis */
+.oak_analysis
+{
+    background-color: var(--dark-secondary-yellow);
+    border-radius: 17px;
+    width: 95%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.analysis_content_flex
+{
+    display: flex;
+    align-items: start;
+}
+
+.analysis_content_secondary
+{
+    align-self: center;
+}
+
+.analysis_content_main
+{
+    margin: 20px;
+}
+
+.analysis_content_main p
+{
+    margin-top: 20px;
+    color: var(--secondary-yellow);
+}
+
+#oak_title
+{
+    font-size: 2rem;
+    color: var(--secondary-yellow);
+}
+
+/* Rotom image */
+.analysis_content_secondary img
+{
+    width: 118px;
+    height: auto;
+    margin: 10px;
+}
+
+.oak_img 
+{
+    width: 158px;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    -------------
+    MEDIA QUERIES
+    -------------
+*/
+/* Small mobile */
+@media (max-width: 400px)
+{
+    .analysis_content_flex
+    {
+        flex-direction: column;
+    }
+
+    .analysis_content_secondary img
+    {
+        margin: 0px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 680px)
+{
+    /*
+    -------------
+    GLOBAL STYLES
+    -------------
+    */
+
+    /*
+    -------------
+    HOMEPAGE
+    -------------
+    */
+
+    /*
+        -------------POKEMON-------------
+    */
+    .pokedex_card_img
+    {
+        width: 15vw;
+    }
+
+    .poke_identity h1
+    {
+        font-size: 3rem;
+    }
+
+    .pokedex_grid
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /*
+    -------------
+    POKEMON
+    -------------
+    */
+    /* Stats */
+    .stat h3
+    {
+        font-size: 1.5rem;
+    }
+    
+    .stat p 
+    {
+        font-size: 1.125rem;
+    }
+
+    /* types */
+    .type
+    {
+        font-size: 1.313rem;
+    }
+
+    /* Gender */
+    .pokemon_gender
+    {
+        max-width: 30%;
+    }
+
+    /* Oak's Analysis */
+    .analysis_content_secondary img
+    {
+        width: 180px;
+    }
+
+    #oak_title
+    {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .oak_img
+    {
+        width: 224px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1100px)
+{
+    /*
+        -------------NAVIGATION-------------
+    */
+    .poke_logo 
+    {
+        width: 15%;
+        padding: 1rem;
+    }
+
+    /*
+    -------------
+    HOMEPAGE
+    -------------
+    */
+
+    /*
+        -------------HEADER-------------
+    */
+    .header_banner
+    {
+        height: 60vh;
+    }
+
+    .header_banner_content
+    {
+        text-align: center;
+    }
+
+    .header_banner_content h1
+    {
+        font-size: 4.5rem;
+    }
+
+    .header_banner_content p 
+    {
+        font-size: 1.313rem;
+    }
+
+    /*
+        -------------POKEMON-------------
+    */
+    
+    .pokedex_grid
+    {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+    }
+
+    .pokedex_card_img
+    {
+        border: 7px solid var(--primary-red);
+        padding: 10px;
+        width: 12vw;
+    }
+
+    .pokedex_card_info p
+    {
+        color: var(--light-text);
+        font-size: 1.125rem;
+        margin: 8px 0;
+    }
+
+    .pokedex_card_info h2
+    {
+        font-size: 1.875rem;
+    }
+
+    /*
+    -------------
+    POKEMON
+    -------------
+    */
+    .pokemon_info
+    {
+        grid-template-columns: 55% 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 20px 50px;
+        width: 75%;
+        margin: 60px auto;
+    }
+
+    /* Poke Card */
+    .poke_card_lg
+    {
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .poke_card_lg hr 
+    {
+        width: 100%;
+    }
+
+    .poke_card_heading 
+    {
+        margin: 0;
+        max-width: 100%;
+        border: 14px solid var(--primary-red);
+        border-radius: 24px;
+    }
+
+    .poke_card_description
+    {
+        justify-content: space-between;
+        margin: 10px 0 30px 0;
+    }
+
+    .poke_card_description p 
+    {
+        font-size: 1.313rem;
+    }
+
+    .poke_card_description h1
+    {
+        font-size: 4.5rem;
+    }
+
+    .catch_release_btn
+    {
+        font-size: 1.313rem;
+    }
+
+    .caught
+    {
+        font-size: 1.313rem;
+    }
+
+    /* Stats */
+    .pokemon_stats
+    {
+        margin: 0px;
+        width: 100%;
+    }
+
+    /* Types */
+    .pokemon_type
+    {
+        margin: 50px 0px;
+    }
+
+    /* Gender */
+    .pokemon_gender
+    {
+        margin-left: 0px;
+        max-width: 50%;
+    }
+
+    /* Oak's Analysis */
+    .oak_analysis
+    {
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+    }
+
+    .analysis_content_main
+    {
+        margin-left: 40px;
+    }
+    
+    .analysis_content_main p 
+    {
+        font-size: 1.125rem;
+    }
+
+    .oak_img
+    {
+        margin: 0;
+    }
+}
+
+/* Hover states */
+@media (hover: hover)
+{
+    .pokedex_card:hover
+    {
+        transition: .6s ease-in-out;
+        transform: translateY(-10px);
+    }
+}

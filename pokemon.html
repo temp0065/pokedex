@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Detailed View</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=malecheckfemale&display=block" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wrapper">
+    <nav>
+        <a href="index.html"><img src="images/pokemon_logo.svg" alt="Official Pokémon Logo" width="2500" height="917" class="poke_logo"></a>
+    </nav>
+    <main class="poke_main">
+        <section class="pokemon_info" aria-label="Information about the Pokémon">
+            <div class="poke_card_lg" aria-label="The Pokémon" role="region">
+                <div class="poke_card_heading"> 
+                    <p class="caught">Caught: <span class="material-symbols-outlined">check</span></p>
+                    <img src="images/pikachu_filler.png" alt="Image of the Pokémon Pikachu" width="105" height="98" class="pokedex_card_img_lg">
+                </div>
+                <div class="poke_card_description">
+                    <div class="poke_identity">
+                        <p>#0001</p>
+                        <h1>Pikachu</h1>
+                    </div>
+                    <button class="catch_release_btn" aria-label="Release Pokémon">Release</button>
+                </div>
+                <hr>
+            </div>
+
+            <section class="poke_widget_info" aria-label="Pokemon statistics and information">
+                <article class="pokemon_stats">
+                    <div class="stats_grid">
+                        <div class="stat">
+                            <h3>Height</h3>
+                            <p>1' 04"</p>
+                        </div>
+        
+                        <div class="stat">
+                            <h3>Category</h3>
+                            <p>Mouse</p>
+                        </div>
+        
+                        <div class="stat">
+                            <h3>Weight</h3>
+                            <p>13.2 lbs</p>
+                        </div>
+        
+                        <div class="stat">
+                            <h3>Abilities</h3>
+                            <p>Static</p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="pokemon_type">
+                    <h2>Type</h2>
+                    <div class="types">
+                        <p class="type electric">Electric</p>
+                    </div>
+                </article>
+    
+                <article class="pokemon_type">
+                    <h2>Weaknesses</h2>
+                    <div class="types">
+                        <p class="type ground">Ground</p>
+                    </div>
+                </article>
+
+                <article class="pokemon_gender">
+                    <h2>Genders</h2>
+                    <div class="poke_gender_icons">
+                        <span class="material-symbols-outlined male">
+                            male
+                        </span>
+                        <span class="material-symbols-outlined female">
+                            female
+                        </span>
+                    </div>
+                </article>
+            </section>
+
+            <article class="oak_analysis" aria-labelledby="oak_title">
+                <div class="analysis_content_flex">
+                    <div class="analysis_content_main">
+                        <h2 id="oak_title">Oak's Analysis</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie pulvinar tellus eget imperdiet. Donec at est convallis odio.</p>
+                    </div>
+                    <div class="analysis_content_secondary">
+                        <img 
+                            srcset="images/rotom_pokedex-derivatives/rotom_pokedex-258_x_258.png, images/rotom_pokedex-derivatives/rotom_pokedex-344_x_344.png 2x, images/rotom_pokedex.png 3x"
+                            src="images/rotom_pokedex.png" 
+                            alt="Rotom Pokédex">
+                    </div>
+                </div>
+            </article>
+            <img 
+                srcset="images/professor_oak-derivatives/professor_oak-132_x_221.png, images/professor_oak.png 2x, images/professor_oak-derivatives/professor_oak-396_x_660.png 3x"
+                src="images/professor_oak.png" 
+                alt="Professor Oak with a pointer"
+                class="oak_img">
+        </section>
+    </main>
+    <footer>
+        <p>Pokémon and Pokémon character names are trademarks of Nintendo.</p>
+    </footer>
+</body>
+</html>

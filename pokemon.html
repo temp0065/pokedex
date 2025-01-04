@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=malecheckfemale&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=malecheckclosefemale&display=block" rel="stylesheet">
     <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="wrapper">
@@ -22,68 +23,47 @@
         <section class="pokemon_info" aria-label="Information about the Pokémon">
             <div class="poke_card_lg" aria-label="The Pokémon" role="region">
                 <div class="poke_card_heading"> 
-                    <p class="caught">Caught: <span class="material-symbols-outlined">check</span></p>
-                    <img src="images/pikachu_filler.png" alt="Image of the Pokémon Pikachu" width="105" height="98" class="pokedex_card_img_lg">
+                    <p class="caught_item" id="caught_item">Caught: <span class="material-symbols-outlined">close</span></p>
+                    <img src="images/pikachu_filler.png" alt="Could not get alt text" width="0" height="0" class="pokedex_card_img_lg" id="pokedex_card_img_lg">
                 </div>
                 <div class="poke_card_description">
                     <div class="poke_identity">
-                        <p>#0001</p>
-                        <h1>Pikachu</h1>
+                        <p id="poke_id">Not Found</p>
+                        <h1 id="poke_title">Not Found</h1>
                     </div>
-                    <button class="catch_release_btn" aria-label="Release Pokémon">Release</button>
+                    <button class="catch_release_btn" id="catch_release_btn" aria-label="Release Pokémon">Catch</button>
                 </div>
                 <hr>
             </div>
 
             <section class="poke_widget_info" aria-label="Pokemon statistics and information">
                 <article class="pokemon_stats">
-                    <div class="stats_grid">
+                    <div class="stats_grid" id="stats">
                         <div class="stat">
                             <h3>Height</h3>
-                            <p>1' 04"</p>
+                            <p id="height_info">Not Found</p>
                         </div>
         
                         <div class="stat">
-                            <h3>Category</h3>
-                            <p>Mouse</p>
+                            <h3>Base Exp</h3>
+                            <p id="base_exp_info">Not Found</p>
                         </div>
         
                         <div class="stat">
                             <h3>Weight</h3>
-                            <p>13.2 lbs</p>
+                            <p id="weight_info">Not Found</p>
                         </div>
         
                         <div class="stat">
                             <h3>Abilities</h3>
-                            <p>Static</p>
+                            <p id="ability_info">Not Found</p>
                         </div>
                     </div>
                 </article>
     
                 <article class="pokemon_type">
                     <h2>Type</h2>
-                    <div class="types">
-                        <p class="type electric">Electric</p>
-                    </div>
-                </article>
-    
-                <article class="pokemon_type">
-                    <h2>Weaknesses</h2>
-                    <div class="types">
-                        <p class="type ground">Ground</p>
-                    </div>
-                </article>
-
-                <article class="pokemon_gender">
-                    <h2>Genders</h2>
-                    <div class="poke_gender_icons">
-                        <span class="material-symbols-outlined male">
-                            male
-                        </span>
-                        <span class="material-symbols-outlined female">
-                            female
-                        </span>
-                    </div>
+                    <div class="types" id="type"></div>
                 </article>
             </section>
 
@@ -91,7 +71,7 @@
                 <div class="analysis_content_flex">
                     <div class="analysis_content_main">
                         <h2 id="oak_title">Oak's Analysis</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie pulvinar tellus eget imperdiet. Donec at est convallis odio.</p>
+                        <p id="analysis_text">Could not get analysis</p>
                     </div>
                     <div class="analysis_content_secondary">
                         <img 
@@ -111,5 +91,6 @@
     <footer>
         <p>Pokémon and Pokémon character names are trademarks of Nintendo.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

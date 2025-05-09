@@ -420,6 +420,7 @@ footer
     color: var(--secondary-yellow);
     max-width: 55ch;
     padding: 0.25rem;
+    line-height: 1.6;
 }
 
 #oak_title
